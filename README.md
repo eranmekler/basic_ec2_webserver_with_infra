@@ -47,8 +47,7 @@ Preview infrastructure changes with:
 
 Apply the Terraform configuration:
 
-**`terraform apply`
-**
+**`terraform apply`**
 
 ### Important Note:
 
