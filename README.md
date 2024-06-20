@@ -55,7 +55,7 @@ This is a basic example for demonstration purposes. Running this code will creat
 	When you're finished, you can destroy the resources provisioned by Terraform:
 	terraform destroy
 
-
+![](https://github.com/eranmekler/basic_ec2_webserver_with_infra/blob/main/basic_ec_&_vpc_config.jpg)
 
 
 
