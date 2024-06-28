@@ -10,7 +10,7 @@ resource "aws_instance" "webserver" {
               sudo yum install docker -y
               systemctl enable docker
               systemctl start docker
-              sudo docker run -d --name erans_blog -p 80:5000 eranmekler/erans_blog:v1.0
+              sudo docker run -d --name ${var.docker_container_name} -p 80:5000 ${var.docker_image}
               EOF
   key_name  = aws_key_pair.webserver_public.key_name
   vpc_security_group_ids = [aws_security_group.webserver_public.id,

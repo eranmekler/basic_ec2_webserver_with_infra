@@ -22,7 +22,18 @@ variable "region" {
   type        = string
   description = "the region to be deployed in"
 }
+
 variable "az" {
   type        = string
   description = "az configuration for the subnet"
+}
+
+variable "docker_image" {
+  type = string
+  description = "the docker image to be run on ec2 bootstrap"
+}
+
+variable "docker_container_name" {
+  type = string
+  description = "the docker --name attribute to be given to the docker image "
 }
