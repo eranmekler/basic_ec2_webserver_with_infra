@@ -15,7 +15,7 @@ resource "aws_instance" "webserver" {
   key_name  = aws_key_pair.webserver_public.key_name
   vpc_security_group_ids = [aws_security_group.webserver_public.id,
   aws_security_group.webserver_public_subnet_ssh.id]
-  subnet_id = aws_subnet.public.id
+  subnet_id  = aws_subnet.public.id
   depends_on = [aws_security_group.webserver_public, aws_security_group.webserver_public_subnet_ssh]
 }
 

@@ -29,11 +29,11 @@ variable "az" {
 }
 
 variable "docker_image" {
-  type = string
+  type        = string
   description = "the docker image to be run on ec2 bootstrap"
 }
 
 variable "docker_container_name" {
-  type = string
+  type        = string
   description = "the docker --name attribute to be given to the docker image "
 }
